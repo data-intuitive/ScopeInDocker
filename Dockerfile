@@ -43,9 +43,9 @@ RUN cd /app/opt && \
     python setup.py develop && \
     cd ..
 
-EXPOSE 55850  # Frontend
-EXPOSE 55851  # Data upload
-EXPOSE 55852  # Backend
+EXPOSE 55850
+EXPOSE 55851
+EXPOSE 55852
 
 WORKDIR /app
 
