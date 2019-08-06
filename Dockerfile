@@ -30,6 +30,8 @@ RUN echo "conda activate scope" >> ~/.bashrc
 #RUN wget --quiet https://github.com/aertslab/SCope/releases/download/untagged-7055c54f734999ce039f/SCope-linux-x64.zip -O /opt/scope.zip
 #RUN (cd /opt/ && unzip scope.zip)
 
+LABEL COMMIT c5f9547d4993226354638634a5b1956ad42b549a
+
 RUN cd / && \
     git clone https://github.com/aertslab/SCope && \
     mv SCope app
